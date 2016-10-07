@@ -3,12 +3,22 @@
 <head>
 <script>
     function check() {
-        alert('Ура!'); 
-
+        
+        q1elem = document.getElementById('a1');
+        if (q1elem.checked) {
+            alert('МОЛОДЕЦ')
+        } else {
+            alert('Хрбрец')
+        }
+        q3elem = document.getElementById('a');
+        reselem = document.getElementById('res');
+       reselem.innerHTML = 'Вы уверены, что' + q3elem.value + '?'; 
     }
 </script>
+
 </head>
 <body>
+
 
 <input id="a1" type="checkbox"/> 
 <label for="a1"> Прививка от гриппа
@@ -20,7 +30,7 @@
 Сколько? 
 <input id="a" type="text"/> 
 <input type="button" value="Check"  onclick="check()" /> 
-
+<div id="res"> Тут будет ответ </div>
 </body>
 
 </html>
