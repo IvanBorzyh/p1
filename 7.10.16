@@ -1,0 +1,26 @@
+<DOCTYPE html />
+<html>
+<head>
+<script>
+    function check() {
+        alert('Ура!'); 
+
+    }
+</script>
+</head>
+<body>
+
+<input id="a1" type="checkbox"/> 
+<label for="a1"> Прививка от гриппа
+</label> <br/>
+ 2 + 2 <br />
+<label for="b1"> <input id="b1" name="kek" type="radio" />  3 </label> <br /> 
+<label for="b2"><input id="b2" name="kek" type ="radio" /> 4 </label> <br />
+<label for="b3"> <input id="b3" name="kek" type ="radio" /> 5 </label> <br />
+Сколько? 
+<input id="a" type="text"/> 
+<input type="button" value="Check"  onclick="check()" /> 
+
+</body>
+
+</html>
